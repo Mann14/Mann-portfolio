@@ -27,17 +27,17 @@ body{
     font-family: "Josefin Sans",sans-serif;
 }
 .main{
-    background-image: url(https://arpitsirasao.github.io/DigitalPortfolio/static/media/portfolio_bg.6dc09719.jpeg);
+    background-image: url(images/portfolio_bg.6dc09719.jpeg);
     height: 120vh;
 }
 .main2{
     background-color: rgba(122, 122, 122, 0.756);
-    height: 45%;
+    height: 40%;
     width: 100%;
 }
 .head{
     position: absolute;
-    left: 50%;
+    right: 20%;
     top: 15%;
 }
 .head h3{
@@ -48,26 +48,42 @@ body{
     border-radius: 50%;
     height: 18rem;
     width: 18rem;
-}
-#img1 img{
     position: absolute;
-    bottom: 150px;
-    left: 100px;
+    bottom: 27%;
+    left: 15%;
     border: 4px solid white;
 }
 .name h1{
     color: white;
     position: absolute;
     font-size: 6rem;
-    bottom: -80px;
-    left: 150px;
+    top: 70%;
+    left: 20%;
     font-family:"Josefin Sans",sans-serif;
 }
 .name h1:hover{
     color: orange;
 }
+@media screen and (max-width:572px) {
+    .main{
+        height: 140vh;
+    }
+    .head{
+        right: 35%;
+        top:75%;
+    }
+    .head h3{
+        font-size: 1.5rem;
+        color: white;
+    }
+    .name h1{
+        font-size: 4rem;
+        top:100%
+    }
+}
+/* About */
 #about{
-    height:40vh;
+    height:35vh;
     background-color:rgba(113, 112, 112, 0.331);
 }
 span h3{
@@ -95,6 +111,13 @@ span h3{
     font-size: large;
     font-family:"Josefin Sans",sans-serif;
 }
+@media screen and (max-width:572px) {
+    #about{
+        height: 45vh;
+    }
+    
+}
+/* Skills */
 #skills{
     height:60vh;
     background-color:rgba(113, 112, 112, 0.331);
@@ -132,9 +155,18 @@ span h3{
 .fa-red{
     color:goldenrod;
 }
+@media screen and (max-width:572px) {
+    .rating span{
+        font-size: 12px;
+    }
+    .skills_sets span{
+        font-size: 15px;
+    }
+}
+/* Resume */
 #Resume{
-    height: 180vh;
-    background-image: url(https://arpitsirasao.github.io/DigitalPortfolio/static/media/resume_bg.7fc9b438.jpg);
+    height: 190vh;
+    background-image: url(images/resume_bg.7fc9b438.jpg);
     display: grid;
     grid-template-rows: 0.5fr 1fr 1fr;
     padding:0 10%;
@@ -153,7 +185,7 @@ span h3{
     grid-template-rows: 1fr 1fr;
     height: 60vh;
     position: relative;
-    bottom: 370px;
+    bottom: 84%;
     gap: 10px;
 }
 .red{
@@ -167,25 +199,15 @@ span h3{
     border:2px solid white;
     right: 3%;
 }
-.timeline-dot{
-    position: sticky;
-    top: 4em;
-    transform: rotate(90deg);
-    margin-top: -20px;
-    margin-left: -3px;
-    z-index: 2;
-}
 .red::before{
     content: '';
     position: absolute;
-    /* right: -7px; */
-    left: -36px; 
+    right: 102%;
     top: 5%;
     border-radius: 50%;
     width: 0.7rem;
     height: 0.7rem;
     border: 2px solid white;
-    z-index: 1;
 }
 .green::before{
     top: 55%;
@@ -202,9 +224,9 @@ span h3{
 }
 .download{
     position: relative;
-    top: 30px;
-    height: 30px;
-    width: 180px;
+    top: 30%;
+    height: 2em;
+    width: 11em;
     padding: 10px 30px 10px 30px;
     background-color:rgba(218, 217, 217, 0.849); 
     border-radius: 20px;
@@ -217,16 +239,49 @@ span h3{
 .download:hover{
     background-color: black;
 }
+@media screen and (max-width:572px){
+    .education{
+        height: 75vh;
+        position: relative;
+        top: 5%;
+    }
+    .edu{
+        height: 55vh;
+        position: relative;
+        bottom:74%;
+    }
+    .timeline-line{
+        position: relative;
+        height: 55vh;
+    }
+    .red h4{
+        color: black;
+        font-size: 15px;
+    }
+    .heading2{
+        font-size: 12px;
+    }
+    .heading3{
+        font-size: 12px;
+    }
+    .red::before{
+        right: 100.8%;
+    }
+    .green::before{
+        top: 60%;
+    }
+}
+/* Project */
 #project{
     height: 120vh;
     background-color:rgba(113, 112, 112, 0.331);
 }
 .project1{
-    margin-top: 100px;
+    margin-top: 8%;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 60px;
-    padding: 0 120px;
+    gap: 10%;
+    padding: 0 10%;
 }
 .blue{
     border: 1px solid black;
@@ -253,16 +308,41 @@ span h3{
     color: white;
     padding:2px 10px;
     font-size: large;
+    border-radius:0 5.8% 0 0;
     font-family:"Josefin Sans",sans-serif;
 }
 .desc2{
     font-family:"Josefin Sans",sans-serif;
-    padding: 20px;
+    padding: 5%;
 }
+@media screen and (max-width:572px) {
+    .project1{
+        margin-top: 20%;
+        padding: 0 5%;
+    }
+    .desc{
+        width: 52.1vw;
+    }
+    .desc1{
+        height: inherit;
+        border-radius:0 5.8% 0 0;
+        font-size: medium;
+    }
+    .first_p{
+        font-size: medium;
+    }
+    .desc2{
+        font-size: 15px;
+    }
+    .desc3{
+        font-size: 10px;
+    }
+}
+/* Contact */
 #Contact{
-    height: 60vh;
+    height: 53vh;
     background-color: black;
-    padding: 80px 50px 0 50px;
+    padding: 5% 9%;
 }
 #contact>h1{
     color: white;
@@ -279,7 +359,7 @@ span h3{
     border: 0px;
     border-bottom: 2px solid white;
     width: 100%;
-    margin: 30px;
+    margin: 6%;
     background-color: inherit;
     outline: none;
     cursor: pointer;
@@ -287,29 +367,20 @@ span h3{
 }
 
 .button{
-    height: 2.5rem;
-    font-size: 1rem;
+    height: 2.5em;
+    font-size: 1em;
     background-color:inherit;
     color: white;
     border: 2px solid white;
     margin-left:35% ;
     cursor: pointer;
 }
-@media screen and (max-width:600px)
-{
-    .button{
-        font-size: 80%;
-    }
-}
 .button:hover{
     box-shadow: 0px 0px 2px 2px white;
     cursor: pointer;
 }
-/* .list{
-    padding-top: 45%;
-} */
 .contact-list li{
-    padding: 10px;
+    padding: 3%;
 }
 .contact-list li span i{
     padding-right: 1%;
@@ -346,12 +417,46 @@ span h3{
     margin-top: -1rem;
     margin-left: -4%;
     position: relative;
-    top: 80px;
-    left: 500px;
+    top: 90px;
+    left:85%;
 }
 .social-list li a i{
     padding: 0px 10px;
     font-size: 1.5rem;
     border-radius: 50%;
     color:lightgray;
+}
+@media screen and (max-width:572px)
+{
+    #Contact{
+        height: 55vh;
+    }
+    .contact-display{
+        margin:0 10% 0 0;
+    }
+    .item form input{
+        width: 90%;
+        margin: 16%;
+    }
+    .button{
+        height: 3em;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .contact-detail{
+        padding:10% 24%;
+    }
+    .item h1{
+        font-size: 16px;
+    }
+    .item p{
+        font-size: 14px;
+    }
+    .contact-list li span
+    {
+        font-size: 10px;
+    }
+    .social-list {
+        top: 40px;
+    }
 }
